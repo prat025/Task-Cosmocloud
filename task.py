@@ -26,7 +26,7 @@ def merge_lists(list_1, list_2) -> list:
     for info in list_2:
         idx=res[info['id']]
         list_3[idx].update(info)
+    del res
     return list_3
 
 list_3 = merge_lists(list_1, list_2)
-print(list_3)
